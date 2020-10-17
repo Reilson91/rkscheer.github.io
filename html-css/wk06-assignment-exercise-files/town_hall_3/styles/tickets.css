@@ -46,13 +46,17 @@ header img {
 	text-shadow: 2px 2px 2px #800000;
 }
 /* the styles for the form */
+
+@keyframes shrinkfield {
+	from {width: 0;}
+	to {width: 50px;}
+}
 fieldset {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    padding-top: .5em;
+    margin-bottom: .5em;
+    padding: .5em 1em .5em 1em;
 }
 legend {
-    color: #931420;
+    color: black;
     font-weight: bold;
     font-size: 85%;
     margin-bottom: .5em;
@@ -60,7 +64,7 @@ legend {
 label {
     float: left;
     width: 12em;
-    text-align: right;
+	text-align: right;
 }
 label, input, select {
 	font-size: 90%;
@@ -70,11 +74,25 @@ input, select {
     margin-left: .5em;
     margin-bottom: .5em;
 }
+
+input[type=text]:focus {
+	border-color: blue;
+	border-width: 3px; 
+	background-color: lightblue;
+}
+
+input[type=email]:focus {
+	border-color: blue; 
+	border-width: 3px; 
+	background-color: lightblue;
+}
 input:required, input[required] {
-	border: 3px solid red;
+	border: 2px solid red;
+	color: #800000;
 }
 input:valid {
 	border: 1px solid black;
+	color: #800000;
 }
 input:invalid {
 	box-shadow: none;
@@ -172,4 +190,28 @@ footer p {
 	text-align: center;
 	color: white;
 	padding: 1em 0;
+}
+
+#payment label {
+	float: none; 
+}
+
+#payment input {
+	width: auto;
+	margin-left: 3em;
+}
+
+#years {
+	width: 5em;
+}
+
+#months {
+	width: 7em;
+}
+svg {
+	background-color: black;
+}
+
+#submit:hover {
+	background-color: rgb(67, 201, 67);
 }
