@@ -48,8 +48,13 @@ header img {
 /* the styles for the form */
 
 @keyframes shrinkfield {
-	from {width: 0;}
-	to {width: 50px;}
+	0% {width: 15em;}
+	50% {width: 1em;}
+	100% {width: 15em;}
+}
+
+input[type=text].reset  {
+	animation: shrinkfield 0.5s ease-in-out .5s;
 }
 fieldset {
     margin-bottom: .5em;
