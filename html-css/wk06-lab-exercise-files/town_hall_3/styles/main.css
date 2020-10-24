@@ -4,12 +4,8 @@
 	padding: 0;
 }
 @keyframes moveright {
-	from {margin-left: 0; 
-		margin-top: 0;
-		transform: scale(1);}
-	to {margin-left: 100px;
-		margin-top: 20px;
-		transform: scale(1.4);}
+	from {width: 0; 
+	}
 
 }
 html {
@@ -175,7 +171,6 @@ aside h3 {
 	padding-bottom: .25em;
 }
 aside img {
-	animation: moveright 2s ease-in-out 3s 4 alternate;
 	padding-bottom: 1em;
 	margin-left: 0;
 	margin-top: 0;

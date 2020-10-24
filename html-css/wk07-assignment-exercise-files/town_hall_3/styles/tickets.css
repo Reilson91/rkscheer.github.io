@@ -3,8 +3,6 @@
 	margin: 0;
 	padding: 0;
 }
-
-
 html {
 	background-color: white;
 }
@@ -81,10 +79,6 @@ input:valid {
 input:invalid {
 	box-shadow: none;
 }
-
-
-
-
 br {
     clear: both;
 }
@@ -178,17 +172,4 @@ footer p {
 	text-align: center;
 	color: white;
 	padding: 1em 0;
-}
-
-.reset {
-	animation: wipeleft 0.5s;
-}
-
-@keyframes wipeleft {
-	from {
-		width: 15em;
-	}
-	to {
-		width: 0;
-	}
 }
